@@ -1,7 +1,7 @@
 var http = require('http');
 var connect = require('connect');
 var directory = 'public';
-var port = process.env.PORT;
+var port = process.env.PORT || 3000;
 
 var app = connect()
   .use(connect.logger(':remote-addr -> :method :url [:status]'))
